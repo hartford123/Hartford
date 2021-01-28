@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: true
+  vars: 
+     ansible_become_pass: hartford
+  var_node: /tmp
+  roles:
+    - prerequisites
+    - nodejs
+    - mongodb
